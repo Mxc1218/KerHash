@@ -1,8 +1,19 @@
-# KerHash
+# KerbHash
 
-KerbHash is a Kerberos RC4 hash spraying tool
-built on top of Impacket getTGT.py.
+Kerberos RC4 Hash Spray Tool
 
-It allows testing NTLM hashes against
-Kerberos TCP/88 authentication in environments
-where RC4-HMAC is enabled.
+## Features
+
+- NTLM hash spraying over Kerberos
+- Uses Impacket getTGT.py
+- User and hash file support
+- Delay control
+- Valid credential logging
+
+## Usage
+
+```bash
+python3 kerbhash.py \
+-d htb.local \
+-u users.txt \
+-p hashes.txt
